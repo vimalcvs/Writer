@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:layout_marginStart="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="32sp"
+                android:layout_marginStart="56dp"
+                android:layout_gravity="start" />
+
+            <ProgressBar
+                android:id="@+id/settings_progress"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize"
+            android:paddingTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:textSize="20sp"
+            android:background="?CBack"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Dark mode"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/theme_switch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end"
+            android:background="#40888888"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Colorful Dashboard"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/dashboard_switch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advertisement"
+            android:paddingTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="6dp"
+            android:paddingStart="16dp"
+            android:textSize="20sp"
+            android:background="?CBack"/>
+
+        <FrameLayout
+            android:id="@+id/banner_frame"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Banner Ad"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/banner_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text=""
+                android:fontFamily="@font/poppins_light"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/banner_switch"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center|end"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end"
+            android:background="#40888888"/>
+
+        <FrameLayout
+            android:id="@+id/interstitial_frame"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interstitial Ad"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/interstitial_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    Interval ~ 3"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/interstitial_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text=""
+                android:fontFamily="@font/poppins_light"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/interstitial_switch"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center|end"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end"
+            android:background="#40888888"/>
+
+        <FrameLayout
+            android:id="@+id/native_frame"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Native Ad"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/native_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text=""
+                android:fontFamily="@font/poppins_light"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/native_switch"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center|end"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Controls"
+            android:paddingTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="6dp"
+            android:paddingStart="16dp"
+            android:textSize="20sp"
+            android:background="?CBack"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Public Post"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/public_switch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end"
+            android:background="#40888888"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Approval Rrequest"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/approval_switch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end"
+            android:background="#40888888"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Public Comments"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="80dp"
+                android:background="#40888888"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/comment_switch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingEnd="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end"
+            android:background="#40888888"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_marginStart="28dp"
+                android:layout_height="55dp"
+                app:boxStrokeColor="?attr/colorControlNormal"
+                app:hintTextColor="?attr/colorControlNormal"
+                android:layout_gravity="bottom"
+                android:hint="Compress image (Kilobyte)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:text="1024"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:text="Save"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

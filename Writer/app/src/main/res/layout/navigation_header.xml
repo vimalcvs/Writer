@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp">
+
+        <com.alim.writer.Class.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:civ_border_color="?BlackWhite"
+            app:civ_border_width="1dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textColor="?attr/BlackWhite"
+            android:textStyle="bold"
+            android:layout_marginStart="70dp" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="App Version"
+            android:textSize="13sp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_marginStart="70dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/day_theme" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/change_theme"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/dark_theme"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:padding="3dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:text="User Name" />
+
+    <TextView
+        android:id="@+id/extractor"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="13sp"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="sourav.0.alim@gmail.com" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#888888"/>
+
+</LinearLayout>

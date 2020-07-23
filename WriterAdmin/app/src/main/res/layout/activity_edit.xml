@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/open_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <com.alim.writer.Class.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            app:civ_border_color="?BlackWhite"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:text="User Name"
+            android:layout_marginTop="2dp"
+            android:textColor="?BlackWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="bottom"
+            android:text="30 Mar 2020"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="Update"
+            android:textColor="?colorAccent"
+            android:textAllCaps="false"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?CBack"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Give a title"
+        android:background="@null"
+        android:textSize="24sp"
+        android:inputType="textCapSentences"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:fontFamily="sans-serif-light"
+        android:hint="Write your post"
+        android:gravity="top"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textSize="20sp" />
+
+</LinearLayout>

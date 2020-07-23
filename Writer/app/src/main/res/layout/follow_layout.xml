@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:padding="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/comment_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.alim.writer.Class.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        app:civ_border_color="?BlackWhite"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_width=".5dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_marginTop="2dp"
+        android:textColor="?BlackWhite"
+        android:textSize="18sp"
+        android:layout_marginStart="65dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/follower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:text="Followers : 0"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="100dp"
+        android:layout_gravity="bottom"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/follow"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="25dp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="end|center_vertical"
+        android:textAllCaps="false"
+        android:backgroundTint="?colorAccent"
+        android:text="Follow" />
+
+</FrameLayout>

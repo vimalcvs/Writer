@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemeActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Settings"
+        app:titleTextColor="@color/colorWhite"
+        app:navigationIcon="@drawable/ic_arrow_back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Theme"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        android:background="?CBack"/>
+
+    <FrameLayout
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ex_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Turn on dark mode"
+            android:textColor="?BlackWhite"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="80dp"
+            android:background="#40888888"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/theme_switch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingEnd="16dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:thumb="@drawable/switch_thumb"
+            app:track="@drawable/switch_track"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Layout Style"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        android:background="?CBack"/>
+
+    <FrameLayout
+        android:id="@+id/style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/teme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post View Style"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="?attr/BlackWhite"
+            android:layout_marginStart="20dp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Elevated"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Flat"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="end"
+        android:background="#40888888"/>
+
+    <FrameLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Enable vertical scroll bar"
+            android:textColor="?BlackWhite"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="80dp"
+            android:background="#40888888"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/scroll_switch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingEnd="16dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:thumb="@drawable/switch_thumb"
+            app:track="@drawable/switch_track"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cache settings"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        android:background="?CBack"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Enable cache"
+            android:textColor="?BlackWhite"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="80dp"
+            android:background="#40888888"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/cache_switch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingEnd="16dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:thumb="@drawable/switch_thumb"
+            app:track="@drawable/switch_track"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="end"
+        android:background="#40888888"/>
+
+    <FrameLayout
+        android:id="@+id/clear_cache"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Clear cache"
+            android:textColor="?BlackWhite"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 MB"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical|end"
+            android:textColor="?BlackWhite"
+            android:textSize="16sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/banner_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"/>
+
+    </FrameLayout>
+
+</LinearLayout>

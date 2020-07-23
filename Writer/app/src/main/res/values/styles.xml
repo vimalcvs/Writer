@@ -1,0 +1,71 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="BlackWhite">@color/colorBlack</item>
+        <item name="WhiteBlack">@color/colorWhite</item>
+        <item name="materialButtonStyle">@style/Button</item>
+        <item name="IconBack">@color/iconWhite</item>
+        <item name="TabColor">@color/tabOnWhite</item>
+        <item name="CBack">#EDEDED</item>
+        <item name="chipStyle">@style/Chip_Style</item>
+        <item name="toolbarStyle">@style/ToolBarLight</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
+        <item name="BlackWhite">@color/colorWhite</item>
+        <item name="WhiteBlack">@color/colorBlack</item>
+        <item name="materialButtonStyle">@style/Button</item>
+        <item name="IconBack">@color/iconBlack</item>
+        <item name="TabColor">@color/tabOnBlack</item>
+        <item name="CBack">#292929</item>
+        <item name="chipStyle">@style/Chip_Style</item>
+        <item name="toolbarStyle">@style/ToolBarLight</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:listPreferredItemHeightSmall">60dp</item>
+        <item name="listPreferredItemHeightSmall">60dp</item>
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">8dp</item>
+        <item name="listPreferredItemPaddingLeft">8dp</item>
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">8dp</item>
+        <item name="listPreferredItemPaddingRight">8dp</item>
+    </style>
+
+    <style name="Chip_Style" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_chip_color</item>
+        <item name="android:textColor">@color/text_chip_color</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="checkedIcon">@drawable/check_circle_white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ToolBarLight" parent="Widget.AppCompat.Toolbar">
+        <item name="popupMenuStyle">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="ToolBarDark" parent="Widget.AppCompat.Toolbar">
+        <item name="popupMenuStyle">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</resources>

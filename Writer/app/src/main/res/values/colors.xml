@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    2770f9
+    <color name="colorPrimary">#5d1afc</color>
+    <color name="colorPrimaryDark">#5d1afc</color>
+    <color name="colorAccent">#5d1afc</color>
+
+    <color name="colorPrimaryNight">#252525</color>
+    <color name="colorPrimaryDarkNight">#252525</color>
+    <color name="colorAccentNight">#4caf50</color>
+    <!--<color name="colorAccentNight">#3ed621</color>-->
+
+    <color name="tabOnWhite">#B3B3B3</color>
+    <color name="tabOnBlack">#979797</color>
+
+    My Colors
+    <color name="iconWhite">#ECECEC</color>
+    <color name="iconBlack">#353535</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#f44336</color>
+    <color name="colorViolet">#7D34FB</color>
+    <color name="colorBlue">#5c61eb</color>
+    <color name="colorLiteGray">#CFCFCF</color>
+
+    //Favourite
+    <color name="PersianBlue">#5d1afc</color>
+    <color name="Violet">#7a4afd</color>
+</resources>

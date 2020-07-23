@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_post"
+            android:title="Make a post"
+            android:icon="@drawable/ic_add"/>
+       <!-- <item
+            android:id="@+id/nav_saved"
+            android:title="Saved"
+            android:icon="@drawable/in_progress_white"/> -->
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings"/>
+        <item
+            android:id="@+id/nav_like"
+            android:title="Like me on Facebook"
+            android:icon="@drawable/ic_like"/>
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share with others"
+            android:icon="@drawable/ic_share"/>
+        <item
+            android:id="@+id/nav_about"
+            android:title="About"
+            android:icon="@drawable/ic_about"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+    </group>
+
+</menu>
